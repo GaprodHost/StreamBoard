@@ -17,8 +17,8 @@
                     <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-3xl">N/A</dd>
                 </div>
                 <div class="mx-auto flex w-full flex-col gap-y-4 bg-gray-100 rounded-md p-10">
-                    <dt class="text-base leading-7 text-gray-600">Version App</dt>
-                    <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-3xl">N/A</dd>
+                    <dt class="text-base leading-7 text-gray-600">Version</dt>
+                    <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-3xl">{{ Setting::get('app_version') }}</dd>
                 </div>
             </dl>
         </div>

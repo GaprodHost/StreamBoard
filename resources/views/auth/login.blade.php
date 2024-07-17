@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/f597ce5d55.js" crossorigin="anonymous"></script>
-    <title>Title</title>
+    <title>Connexion | Streamboard</title>
 
     @vite('css')
 </head>
@@ -14,7 +14,7 @@
 <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
     <div class="sm:mx-auto sm:w-full sm:max-w-sm">
         <div class="text-center"><i class="fa fa-rocket text-4xl text-emerald-500"></i></div>
-        <h2 class="mt-5 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Connexion à Streamboard</h2>
+        <h2 class="mt-5 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Connexion `à Streamboard</h2>
     </div>
 
     <div class="mt-5 sm:mx-auto sm:w-full sm:max-w-sm">

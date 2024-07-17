@@ -4,7 +4,10 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    $links = \App\Models\Link::all();
+    return view('welcome',[
+        'links' => $links
+    ]);
 });
 
 Route::get('/dashboard', function () {

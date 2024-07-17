@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/f597ce5d55.js" crossorigin="anonymous"></script>
     <title>@yield('title') | Streamboard</title>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="icon" type="image/png" href="{{ Setting::get('avatar_url') }}">
 
     @vite('css')
 </head>
@@ -29,6 +30,9 @@
                             </a>
                             <a href="{{ route('links.list') }}" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
                                 Liens
+                            </a>
+                            <a href="{{ route('settings.list') }}" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
+                                Paramètres
                             </a>
                         </div>
                     </div>

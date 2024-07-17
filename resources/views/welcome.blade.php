@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/f597ce5d55.js" crossorigin="anonymous"></script>
-    <title>Title</title>
+    <title>{{ Setting::get('name') }}</title>
 
+    <link rel="icon" type="image/png" href="{{ Setting::get('avatar_url') }}">
     @vite('css')
 </head>
 <body class="h-screen bg-[{{ Setting::get('background_color') }}]">

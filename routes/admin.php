@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\UpdateController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -17,4 +18,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/settings/{setting_id}/update', [\App\Http\Controllers\Admin\SettingController::class, 'editForm'])->name('settings.edit');
     Route::post('/settings/{setting_id}/update', [\App\Http\Controllers\Admin\SettingController::class, 'storeUpdate'])->name('settings.store');
 
+    // Update
+    Route::get('/update', [UpdateController::class, 'show'])->name('update.show');
+    Route::post('/update', [UpdateController::class, 'update'])->name('update.perform');
 });
